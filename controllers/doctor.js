@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 exports.secure = async function (req, res, next) {
     try {
         let token = req.headers.authorization
-        // console.log(token);
+        console.log(token);
         if (!token) {
             throw new Error('please send Token')
         }
